@@ -1,7 +1,7 @@
 # 312codepath, 
-# CodePath Week 7 Assignment
-# Logan Louks
-# 11/6/2018
+CodePath Week 7 Assignment
+Logan Louks
+11/6/2018
 
 # Directions:
 For this week's assignment, discover and demonstrate similar proofs-of-concept for at least an additional three and (up to five) exploits affecting an older version of WP. Submit the write-ups and walkthroughs via Github. Check out the Submitting Assignments page for more details. Be sure to include a README.md based on this README template containing a small writeup and GIF walkthroughs of each exploit.
