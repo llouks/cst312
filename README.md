@@ -5,21 +5,21 @@
 
 # Directions: For this week's assignment, discover and demonstrate similar proofs-of-concept for at least an additional three and (up to five) exploits affecting an older version of WP. Submit the write-ups and walkthroughs via Github. Check out the Submitting Assignments page for more details. Be sure to include a README.md based on this README template containing a small writeup and GIF walkthroughs of each exploit.
 
-exploits
+# Exploits
 
 # Project 7 - WordPress Pentesting
 
 Time spent: **3.5** hours spent in total
 
-> Objective: Find, analyze, recreate, and document **five vulnerabilities** affecting an old version of WordPress
+Objective: Find, analyze, recreate, and document **five vulnerabilities** affecting an old version of WordPress
 
 ## Pentesting Report
     
 1. CVE-2017-1000600
-Summary: 
-WordPress version <4.9 contains a CWE-20 Input Validation vulnerability in thumbnail processing that can result in remote code execution. This attack appears to be exploitable via thumbnail upload by an authenticated user and may require additional plugins in order to be exploited however this has not been confirmed at this time. This issue appears to have been partially, but not completely fixed in WordPress 4.9	
+
+Summary: WordPress version 4.9 contains a CWE-20 Input Validation vulnerability in thumbnail processing that can result in remote code execution. This attack appears to be exploitable via thumbnail upload by an authenticated user and may require additional plugins in order to be exploited however this has not been confirmed at this time. This issue appears to have been partially, but not completely fixed in WordPress 4.9	
   
-    - Vulnerability types:
+Vulnerability types:
 Confidentiality Impact - Partial (There is considerable informational disclosure.)
     
 Integrity Impac - Partial (Modification of some system files or information is possible, but the attacker does not have control over what can be modified, or the scope of what the attacker can affect is limited.)
@@ -40,9 +40,21 @@ Gained Access -	None
     
 
 2. CVE-2009-2762
+
 Summary: wp-login.php in WordPress 2.8.3 and earlier allows remote attackers to force a password reset for the first user in the database, possibly the administrator, via a key[] array variable in a resetpass (aka rp) action, which bypasses a check that assumes that $key is not an array.
 
 Vulnerability types: Bypass
+
+Confidentiality Impact: Partial (There is considerable informational disclosure.)
+
+Integrity Impact: Partial (Modification of some system files or information is possible, but the attacker does not have control over what can be modified, or the scope of what the attacker can affect is limited.)
+
+Availability Impact: Partial (There is reduced performance or interruptions in resource availability.)
+Access Complexity: Low (Specialized access conditions or extenuating circumstances do not exist. Very little knowledge or skill is required to exploit. )
+
+Authentication: Not required (Authentication is not required to exploit the vulnerability.)
+
+Gained Access: None
 
 Tested in version:2.8.3
 
@@ -55,9 +67,20 @@ Fixed in version: 2.8.4
 
 
 3. CVE-2007-2821
+
 Summary: SQL injection vulnerability in wp-admin/admin-ajax.php in WordPress before 2.2 allows remote attackers to execute arbitrary SQL commands via the cookie parameter.
 
 Vulnerability types: Exec, Code, Sql
+
+Confidentiality Impact:	Partial (There is considerable informational disclosure.)
+
+Integrity Impact: Partial (Modification of some system files or information is possible, but the attacker does not have control over what can be modified, or the scope of what the attacker can affect is limited.)
+Availability Impact	Partial (There is reduced performance or interruptions in resource availability.)
+Access Complexity	Low (Specialized access conditions or extenuating circumstances do not exist. Very little knowledge or skill is required to exploit. )
+
+Authentication: Not required (Authentication is not required to exploit the vulnerability.)
+
+Gained Access: User
 
 Tested in version: 2.2
 
