@@ -31,8 +31,10 @@ Access Complexity -	Low (Specialized access conditions or extenuating circumstan
 
 Gained Access -	None
     
-    - Tested in version: <4.9
-    - Fixed in version: - 
+Tested in version: 4.9
+
+Fixed in version:  
+  
   - [ ] GIF Walkthrough: 
   - [ ] Steps to recreate: 
   - [ ] Affected source code: 
